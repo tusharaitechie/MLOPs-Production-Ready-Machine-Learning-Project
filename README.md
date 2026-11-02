@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Machine%20Learning-scikit--learn-orange" alt="Machine Learning"/>
-  <img src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/Backend-FastAPI-black?logo=fastapi" alt="FastAPI"/>
   <img src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" alt="MongoDB"/>
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/>
