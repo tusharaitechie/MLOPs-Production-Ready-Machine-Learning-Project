@@ -1,4 +1,4 @@
-# 🇺🇸 US Visa Approval Prediction | End-to-End MLOps Project
+# US Visa Approval Prediction | End-to-End MLOps Project
 
 <p align="center">
   <strong>An end-to-end Machine Learning application for predicting US visa application outcomes</strong><br/>
@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Machine%20Learning-scikit--learn-orange" alt="Machine Learning"/>
-  <img src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" alt="Flask"/>
+  <img src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" alt="FastAPI"/>
   <img src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" alt="MongoDB"/>
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/>
@@ -123,7 +123,7 @@ flowchart TD
 | Language | Python | Application and ML implementation |
 | Data processing | Pandas, NumPy | Data manipulation and numerical operations |
 | Machine Learning | Scikit-learn | Preprocessing and classification |
-| Web application | Flask / HTML / CSS | Prediction interface |
+| Web application | Fast API / HTML / CSS | Prediction interface |
 | Database | MongoDB | Configured data storage and retrieval |
 | Cloud storage | AWS S3 | Configured storage for model artifacts |
 | Cloud infrastructure | AWS EC2 | Hosting the containerized application |
@@ -319,7 +319,7 @@ This is expected to execute the training workflow wired into that entry point. R
 python app.py
 ```
 
-Open the local URL printed by Flask in the terminal. In the reference implementation the application is commonly served on port `8080`:
+Open the local URL printed by Fast API in the terminal. In the reference implementation the application is commonly served on port `8080`:
 
 ```text
 http://127.0.0.1:8080
@@ -464,7 +464,7 @@ docker rm us-visa-prediction
 docker rmi us-visa-prediction:latest
 ```
 
-> The container port must match the port exposed by the Flask application and configured in the Dockerfile. If your app uses a different port, update the `-p` mapping accordingly.
+> The container port must match the port exposed by the Fast API application and configured in the Dockerfile. If your app uses a different port, update the `-p` mapping accordingly.
 
 ---
 
@@ -876,7 +876,7 @@ Do not ignore model or configuration files that are intentionally required to re
 | ECR login failure | Incorrect region or registry URI | Ensure the ECR registry and CLI region match |
 | Docker build failure | Missing files or incorrect build context | Run the build from the directory containing the Dockerfile; inspect `.dockerignore` |
 | Container exits immediately | Application startup error or missing environment variables | Run `docker logs <container-name>` |
-| Browser cannot reach EC2 app | Container port or security group mismatch | Check `docker ps`, Flask bind address, port mapping, and inbound rules |
+| Browser cannot reach EC2 app | Container port or security group mismatch | Check `docker ps`, Fast API bind address, port mapping, and inbound rules |
 | GitHub Actions runner offline | Runner service stopped or registration issue | Check runner status and restart the runner service |
 | Workflow cannot push to ECR | Missing secret, wrong secret format, or insufficient IAM permissions | Compare workflow secret references with repository secrets and IAM policy |
 
