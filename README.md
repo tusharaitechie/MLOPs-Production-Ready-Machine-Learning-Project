@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" alt="MongoDB"/>
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/AI-Evidently-black?logo=python" alt="Evidently AI"/>
   <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions"/>
 </p>
 
